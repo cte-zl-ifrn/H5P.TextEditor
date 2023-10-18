@@ -1,0 +1,84 @@
+{
+    "title": "CodeMirror",
+    "contentType": "library",
+    "majorVersion": 1,
+    "minorVersion": 0,
+    "patchVersion": 2,
+    "runnable": 0,
+    "machineName": "CodeMirror",
+    "author": "Mathieu Degrange - Library from Marijn Haverbeke and Other",
+    "license": "MIT",
+    "preloadedJs": [
+        {
+            "path": "lib/codemirror.js"
+        },
+        {
+            "path": "codemirror.js"
+        },
+        {
+            "path": "mode/meta.js"
+        },
+        {
+            "path": "keymap/sublime.js"
+        },
+        {
+            "path": "addon/mode/loadmode.js"
+        },
+        {
+            "path": "addon/edit/matchbrackets.js"
+        },
+        {
+            "path": "addon/fold/foldcode.js"
+        },
+        {
+            "path": "addon/fold/foldgutter.js"
+        },
+        {
+            "path": "addon/fold/indent-fold.js"
+        },
+        {
+            "path": "addon/fold/brace-fold.js"
+        },
+        {
+            "path": "addon/fold/comment-fold.js"
+        },
+        {
+            "path": "addon/fold/markdown-fold.js"
+        },
+        {
+            "path": "addon/fold/xml-fold.js"
+        },
+        {
+            "path": "addon/selection/active-line.js"
+        },
+        {
+            "path": "addon/display/fullscreen.js"
+        },
+        {
+            "path": "addon/edit/matchtags.js"
+        },
+        {
+            "path": "addon/hint/show-hint.js"
+        },
+        {
+            "path": "addon/runmode/runmode.js"
+        }
+    ],
+    "preloadedCss": [
+        {
+            "path": "lib/codemirror.css"
+        },
+        {
+            "path": "codemirror.css"
+        },
+        {
+            "path": "addon/fold/foldgutter.css"
+        },
+        {
+            "path": "addon/display/fullscreen.css"
+        },
+        {
+            "path": "addon/hint/show-hint.css"
+        }
+    ]
+}

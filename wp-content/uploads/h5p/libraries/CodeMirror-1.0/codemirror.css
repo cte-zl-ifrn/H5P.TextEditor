@@ -1,0 +1,12 @@
+.CodeMirror {
+  border: 1px solid #ddd;
+  height: auto;
+}
+
+.CodeMirror-scroll {
+  height: inherit;
+}
+
+.CodeMirror-highlightedline {
+  background-color: rgb(255 235 59 / 25%)
+}

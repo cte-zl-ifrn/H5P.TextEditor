@@ -1,0 +1,10 @@
+{
+  "libraryStrings": {
+    "setShortcut": "Set shortcut",
+    "shortcut": "Shortcut",
+    "alternativeText": "Alternative Text",
+    "error:mustBeFilled": "A shortcut need to be selected",
+    "error:invalidShortcut": "Invalid shortcut",
+    "keys:Control": "Ctrl"
+  }
+}

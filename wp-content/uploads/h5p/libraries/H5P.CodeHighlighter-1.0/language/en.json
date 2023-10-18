@@ -1,0 +1,527 @@
+{
+  "semantics": [
+    {
+      "label": "Language",
+      "description": "Select the language of your code.",
+      "options": [
+        {
+          "label": "APL"
+        },
+        {
+          "label": "PGP"
+        },
+        {
+          "label": "ASN.1"
+        },
+        {
+          "label": "Asterisk"
+        },
+        {
+          "label": "Brainfuck"
+        },
+        {
+          "label": "C"
+        },
+        {
+          "label": "C++"
+        },
+        {
+          "label": "Cobol"
+        },
+        {
+          "label": "C#"
+        },
+        {
+          "label": "Clojure"
+        },
+        {
+          "label": "ClojureScript"
+        },
+        {
+          "label": "Closure Stylesheets (GSS)"
+        },
+        {
+          "label": "CMake"
+        },
+        {
+          "label": "CoffeeScript"
+        },
+        {
+          "label": "Common Lisp"
+        },
+        {
+          "label": "Cypher"
+        },
+        {
+          "label": "Cython"
+        },
+        {
+          "label": "Crystal"
+        },
+        {
+          "label": "CSS"
+        },
+        {
+          "label": "CQL"
+        },
+        {
+          "label": "D"
+        },
+        {
+          "label": "Dart"
+        },
+        {
+          "label": "diff"
+        },
+        {
+          "label": "Django"
+        },
+        {
+          "label": "Dockerfile"
+        },
+        {
+          "label": "DTD"
+        },
+        {
+          "label": "Dylan"
+        },
+        {
+          "label": "EBNF"
+        },
+        {
+          "label": "ECL"
+        },
+        {
+          "label": "edn"
+        },
+        {
+          "label": "Eiffel"
+        },
+        {
+          "label": "Elm"
+        },
+        {
+          "label": "Embedded JavaScript"
+        },
+        {
+          "label": "Embedded Ruby"
+        },
+        {
+          "label": "Erlang"
+        },
+        {
+          "label": "Esper"
+        },
+        {
+          "label": "Factor"
+        },
+        {
+          "label": "FCL"
+        },
+        {
+          "label": "Forth"
+        },
+        {
+          "label": "Fortran"
+        },
+        {
+          "label": "F#"
+        },
+        {
+          "label": "Gas"
+        },
+        {
+          "label": "Gherkin"
+        },
+        {
+          "label": "GitHub Flavored Markdown"
+        },
+        {
+          "label": "Go"
+        },
+        {
+          "label": "Groovy"
+        },
+        {
+          "label": "HAML"
+        },
+        {
+          "label": "Haskell"
+        },
+        {
+          "label": "Haskell (Literate)"
+        },
+        {
+          "label": "Haxe"
+        },
+        {
+          "label": "HXML"
+        },
+        {
+          "label": "ASP.NET"
+        },
+        {
+          "label": "HTML"
+        },
+        {
+          "label": "HTTP"
+        },
+        {
+          "label": "IDL"
+        },
+        {
+          "label": "Pug"
+        },
+        {
+          "label": "Java"
+        },
+        {
+          "label": "Java Server Pages"
+        },
+        {
+          "label": "JavaScript"
+        },
+        {
+          "label": "JSON"
+        },
+        {
+          "label": "JSON-LD"
+        },
+        {
+          "label": "JSX"
+        },
+        {
+          "label": "Jinja2"
+        },
+        {
+          "label": "Julia"
+        },
+        {
+          "label": "Kotlin"
+        },
+        {
+          "label": "LESS"
+        },
+        {
+          "label": "LiveScript"
+        },
+        {
+          "label": "Lua"
+        },
+        {
+          "label": "Markdown"
+        },
+        {
+          "label": "mIRC"
+        },
+        {
+          "label": "MariaDB SQL"
+        },
+        {
+          "label": "Mathematica"
+        },
+        {
+          "label": "Modelica"
+        },
+        {
+          "label": "MUMPS"
+        },
+        {
+          "label": "MS SQL"
+        },
+        {
+          "label": "mbox"
+        },
+        {
+          "label": "MySQL"
+        },
+        {
+          "label": "Nginx"
+        },
+        {
+          "label": "NSIS"
+        },
+        {
+          "label": "NTriples"
+        },
+        {
+          "label": "Objective-C"
+        },
+        {
+          "label": "Objective-C++"
+        },
+        {
+          "label": "OCaml"
+        },
+        {
+          "label": "Octave"
+        },
+        {
+          "label": "Oz"
+        },
+        {
+          "label": "Pascal"
+        },
+        {
+          "label": "PEG.js"
+        },
+        {
+          "label": "Perl"
+        },
+        {
+          "label": "PHP"
+        },
+        {
+          "label": "Pig"
+        },
+        {
+          "label": "Plain Text"
+        },
+        {
+          "label": "PLSQL"
+        },
+        {
+          "label": "PostgreSQL"
+        },
+        {
+          "label": "PowerShell"
+        },
+        {
+          "label": "Properties files"
+        },
+        {
+          "label": "ProtoBuf"
+        },
+        {
+          "label": "Python"
+        },
+        {
+          "label": "Puppet"
+        },
+        {
+          "label": "Q"
+        },
+        {
+          "label": "R"
+        },
+        {
+          "label": "reStructuredText"
+        },
+        {
+          "label": "RPM Changes"
+        },
+        {
+          "label": "RPM Spec"
+        },
+        {
+          "label": "Ruby"
+        },
+        {
+          "label": "Rust"
+        },
+        {
+          "label": "SAS"
+        },
+        {
+          "label": "Sass"
+        },
+        {
+          "label": "Scala"
+        },
+        {
+          "label": "Scheme"
+        },
+        {
+          "label": "SCSS"
+        },
+        {
+          "label": "Shell"
+        },
+        {
+          "label": "Sieve"
+        },
+        {
+          "label": "Slim"
+        },
+        {
+          "label": "Smalltalk"
+        },
+        {
+          "label": "Smarty"
+        },
+        {
+          "label": "Solr"
+        },
+        {
+          "label": "SML"
+        },
+        {
+          "label": "Soy"
+        },
+        {
+          "label": "SPARQL"
+        },
+        {
+          "label": "Spreadsheet"
+        },
+        {
+          "label": "SQL"
+        },
+        {
+          "label": "SQLite"
+        },
+        {
+          "label": "Squirrel"
+        },
+        {
+          "label": "Stylus"
+        },
+        {
+          "label": "Swift"
+        },
+        {
+          "label": "sTeX"
+        },
+        {
+          "label": "LaTeX"
+        },
+        {
+          "label": "SystemVerilog"
+        },
+        {
+          "label": "Tcl"
+        },
+        {
+          "label": "Textile"
+        },
+        {
+          "label": "TiddlyWiki"
+        },
+        {
+          "label": "Tiki wiki"
+        },
+        {
+          "label": "TOML"
+        },
+        {
+          "label": "Tornado"
+        },
+        {
+          "label": "troff"
+        },
+        {
+          "label": "TTCN"
+        },
+        {
+          "label": "TTCN_CFG"
+        },
+        {
+          "label": "Turtle"
+        },
+        {
+          "label": "TypeScript"
+        },
+        {
+          "label": "TypeScript-JSX"
+        },
+        {
+          "label": "Twig"
+        },
+        {
+          "label": "Web IDL"
+        },
+        {
+          "label": "VB.NET"
+        },
+        {
+          "label": "VBScript"
+        },
+        {
+          "label": "Velocity"
+        },
+        {
+          "label": "Verilog"
+        },
+        {
+          "label": "VHDL"
+        },
+        {
+          "label": "Vue.js Component"
+        },
+        {
+          "label": "XML"
+        },
+        {
+          "label": "XQuery"
+        },
+        {
+          "label": "Yacas"
+        },
+        {
+          "label": "YAML"
+        },
+        {
+          "label": "Z80"
+        },
+        {
+          "label": "mscgen"
+        },
+        {
+          "label": "xu"
+        },
+        {
+          "label": "msgenny"
+        },
+        {
+          "label": "WebAssembly"
+        }
+      ]
+    },
+    {
+      "label": "Code",
+      "description": "The code to display. You can press Echap then Tab to focus the next field."
+    },
+    {
+      "label": "Show Lines Numbers",
+      "description": "Uncheck this to hide the line numbering on the display page. This does not affect this authoring view."
+    },
+    {
+      "label": "Read only",
+      "description": "If checked, it will not be possible to edit the code. The code will still be selectable. This does not affect this authoring view."
+    },
+    {
+      "label": "Max height",
+      "description": "Max height (in pixels) of the editor. Set it to 0 if you don't want to put a max height."
+    },
+    {
+      "label": "Highlight Lines",
+      "description": "Use this option to highlight some lines of the code. Use syntax 1,3,5-7 to highlight lines 1, 3, and 5 to 7.",
+      "default": ""
+    },
+    {
+      "label": "Avanced Options",
+      "fields": [
+        {
+          "label": "Automatic Line Wrapping",
+          "description": "If a line is too long, display it on multiple line instead of showing an horizontal scrollbar. This does not affect this authoring view."
+        },
+        {
+          "label": "Allow to fold block",
+          "description": "Display an icon at the left allowing to fold some portion of the code. This does not affect this authoring view."
+        },
+        {
+          "label": "Match Tags",
+          "description": "Enable this to highlight the tag your cursor is over and it's matching tag in language like html."
+        },
+        {
+          "label": "Tab Size",
+          "description": "Size of tabs on the display page. This does not affect this authoring view."
+        },
+        {
+          "label": "First line number",
+          "description": "Change this if you want your line numbering to start from an other number than 1."
+        }
+      ]
+    }
+  ]
+}

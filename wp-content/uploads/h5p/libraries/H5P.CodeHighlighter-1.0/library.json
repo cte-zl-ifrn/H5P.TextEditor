@@ -1,0 +1,37 @@
+{
+  "title": "Code Highlighter",
+  "description": "Display code from various language (html, javascript, python, etc.) with syntax highlighting",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "embedTypes": [
+    "iframe"
+  ],
+  "author": "Degrange Mathieu",
+  "license": "MIT",
+  "machineName": "H5P.CodeHighlighter",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 19
+  },  
+  "preloadedJs": [
+    {
+      "path": "h5p-code-highlighter.js"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "CodeMirror",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.CodeEditor",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ]
+}
