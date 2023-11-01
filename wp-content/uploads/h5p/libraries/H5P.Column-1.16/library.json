@@ -7,7 +7,7 @@
   "author": "Joubel",
   "majorVersion": 1,
   "minorVersion": 16,
-  "patchVersion": 2,
+  "patchVersion": 5,
   "runnable": 1,
   "fullscreen": 0,
   "embedTypes": [
@@ -17,6 +17,13 @@
     "majorVersion": 1,
     "minorVersion": 19
   },
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.CodeHighlighter",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ],
   "preloadedJs": [
     {
       "path": "scripts/h5p-column.js"

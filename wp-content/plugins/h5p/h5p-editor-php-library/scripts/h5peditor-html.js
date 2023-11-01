@@ -549,3 +549,4 @@ ns.Html.prototype.forceValue = function (value) {
 };
 
 ns.widgets.html = ns.Html;
+console.log("HTML");

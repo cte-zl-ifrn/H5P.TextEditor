@@ -1,0 +1,34 @@
+{
+  "title": "TextEditor",
+  "description": "A simple library that displays text with all kinds of styling.",
+  "majorVersion": 1,
+  "minorVersion": 1,
+  "patchVersion": 20,
+  "runnable": 0,
+  "machineName": "H5P.TextEditor",
+  "author": "Joubel",
+  "preloadedJs": [
+    {
+      "path": "text.js"
+    },
+    {
+      "path": "vendor/tinymce.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "text.css"
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5P.Text",
+      "majorVersion": 1,
+      "minorVersion": 1
+    }
+  ],
+  "metadataSettings": {
+    "disable": 0,
+    "disableExtraTitleField": 1
+  }
+}
