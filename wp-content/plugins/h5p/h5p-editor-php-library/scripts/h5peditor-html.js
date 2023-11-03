@@ -299,6 +299,7 @@ ns.Html.prototype.createToolbar = function () {
  * @returns {undefined}
  */
 ns.Html.prototype.appendTo = function ($wrapper) {
+
   var that = this;
 
   this.$item = ns.$(this.createHtml()).appendTo($wrapper);
@@ -437,6 +438,7 @@ ns.Html.prototype.appendTo = function ($wrapper) {
  * Create HTML for the HTML field.
  */
 ns.Html.prototype.createHtml = function () {
+  
   const id = ns.getNextFieldId(this.field);
   var input = '<div id="' + id + '"';
   if (this.field.description !== undefined) {
@@ -454,6 +456,8 @@ ns.Html.prototype.createHtml = function () {
   return ns.createFieldMarkup(this.field, ns.createImportantDescription(this.field.important) + input, id);
 };
 
+console.log("oi");
+
 /**
  * Validate the current text field.
  */
@@ -464,9 +468,10 @@ ns.Html.prototype.validate = function () {
     that.$errors.empty();
     this.$input.addClass('error');
   }
-
+  
   // Get contents from editor
   var value = this.ckeditor !== undefined ? this.ckeditor.getData() : this.$input.html();
+  console.log(this.ckeditor.getData());
 
   value = value
     // Remove placeholder text if any:
@@ -549,4 +554,4 @@ ns.Html.prototype.forceValue = function (value) {
 };
 
 ns.widgets.html = ns.Html;
-console.log("HTML");
+console.log("HTML tetse");
