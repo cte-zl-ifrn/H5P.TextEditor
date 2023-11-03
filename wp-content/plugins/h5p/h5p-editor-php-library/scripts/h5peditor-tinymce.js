@@ -21,6 +21,12 @@ ns.TinyMCE.prototype.inTags = function (value) {
   return (ns.$.inArray(value.toLowerCase(), this.tags) >= 0);
 };
 
+/*
+
+document.getElementById("tinymce").children[0].innerText
+
+*/
+
 /**
  * Append field to wrapper.
  *
@@ -29,16 +35,14 @@ ns.TinyMCE.prototype.inTags = function (value) {
  */
 ns.TinyMCE.prototype.appendTo = function ($wrapper) {
   var that = this;
-  var uniqueId = 'tinymce_' + new Date().getTime();
-  var input = '<textarea id="' + uniqueId + '" class="ckeditor" tabindex="0"></textarea>';
-  this.$item = ns.$(this.createTinyMCE(input)).appendTo($wrapper);
+  this.$item = ns.$(this.createTinyMCE()).appendTo($wrapper);
   this.$input = this.$item.children('.ckeditor');
   this.$errors = this.$item.children('.h5p-errors');
 
   ns.bindImportantDescriptionEvents(this, this.field.name, this.parent);
 
   tinymce.init({
-    selector: '#' + uniqueId,
+    selector: '.ckeditor', // Seletor para os elementos com editor de texto
     setup: function (editor) {
       editor.on('change', function () {
         that.validate();
@@ -50,8 +54,14 @@ ns.TinyMCE.prototype.appendTo = function ($wrapper) {
 /**
  * Create TinyMCE for the TinyMCE field.
  */
-ns.TinyMCE.prototype.createTinyMCE = function (input) {
+ns.TinyMCE.prototype.createTinyMCE = function () {
   const id = ns.getNextFieldId(this.field);
+  var input = '<textarea id="' + id + '" class="ckeditor" tabindex="0">';
+  if (this.value !== undefined) {
+    input += this.value;
+  }
+  input += '</textarea>';
+
   return ns.createFieldMarkup(this.field, ns.createImportantDescription(this.field.important) + input, id);
 };
 
@@ -64,8 +74,8 @@ ns.TinyMCE.prototype.validate = function () {
   }
 
   // Pega o valor digitado, com a formatação
-  var uniqueId = this.$input.attr('id');
-  var value = tinymce.get(uniqueId).getContent() || "Texto vazio"; //
+  var idUnico = this.$input.attr("id");
+  var value = tinyMCE.get(idUnico).getContent() || "Texto vazio";
   console.log(value);
 
   // Atualize o valor do campo com o conteúdo do TinyMCE
