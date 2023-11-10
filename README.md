@@ -19,7 +19,7 @@ Esta é uma ferramenta H5P de edição de conteúdo de texto baseada na bibliote
 
    1. baixando o column: Abra um terminal localmente e insira o seguinte comando: `h5p get h5p-column`
    2. Abra o column em algum editor de código(VS Code)
-   3. Inserindo nosso componente: No arquivo semantics, deveremos inserir `"H5P.TextEditor 1.0",`, dessa forma o nosso TextEditor será listado como uma opção.![Untitled](README/Untitled2.png)
+   3. Inserindo nosso componente: No arquivo semantics, devemos inserir `"H5P.TextEditor 1.0",`, dessa forma o nosso TextEditor será listado como uma opção.![Untitled](README/Untitled2.png)
    4. Por fim, devemos empacotar o diretório do Column utilizando a linha de comando: `h5p pack h5p-column h5p-column.h5p`.
    5. Agora basta inserir o arquivo h5p-column.h5p no seu ambiente para atualizar, e usufruir do novo componente de texto.
 
