@@ -3,7 +3,7 @@
     "name": "text",
     "type": "text",
     "widget": "tinymce",
-    "label": "Mudei aqui",
+    "label": "Text Editor",
     "importance": "high",
     "enterMode": "p",
     "tags": [
@@ -17,7 +17,8 @@
       "h3",
       "hr",
       "pre",
-      "code"
+      "code",
+      "img"
     ],
     "font": {
       "size": true,
