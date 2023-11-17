@@ -7,6 +7,7 @@ Esta é uma ferramenta H5P de edição de conteúdo de texto baseada na bibliote
 **Como Integrar Esta Biblioteca no Seu Ambiente:**
 
 1. Não será necessário se preocupar em instalar pré-dependências, pois essa nova ferramenta depende apenas do H5P.Text. Por padrão, esse componente já estará instalado em seu ambiente.
+2. Então basta empacotar o arquivo utilizando a Inferface de linha de comando do h5p(H5Pcli), e inserir o arquivo empacotado em seu ambiente de desenvolvimento. Para mais informações acesse: [Doc cli5hp](https://h5p.org/h5p-cli-guide)
 
 **Utilizando o componente TextEditor dentro de outro conteúdo h5p:**
 

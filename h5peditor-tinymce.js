@@ -35,8 +35,6 @@ ns.TinyMCE.prototype.appendTo = function ($wrapper) {
 
     ns.bindImportantDescriptionEvents(this, this.field.name, this.parent);
 
-    console.log("Funcionando");
-
     tinymce.init({
         selector: '.ckeditor',
         height: 500,
