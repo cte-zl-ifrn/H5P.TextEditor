@@ -8,8 +8,6 @@ Esta é uma ferramenta H5P de edição de conteúdo de texto baseada na bibliote
 
 1. Não será necessário se preocupar em instalar pré-dependências, pois essa nova ferramenta depende apenas do H5P.Text. Por padrão, esse componente já estará instalado em seu ambiente.
 
-![Untitled](README/Untitled1.png)
-
 **Utilizando o componente TextEditor dentro de outro conteúdo h5p:**
 
 1. Digamos que você queira utilizar o TextEditor dentro de um conteúdo Column, que inclusive o Livro Interativo utiliza o Column para criar seus conteúdos. Por padrão o Column nao irá mostrar como opção o nosso textEditor.
