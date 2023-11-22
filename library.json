@@ -12,7 +12,7 @@
       "path": "text.js"
     },
     {
-      "path": "h5peditor-tinymce.js"
+      "path": "tinymce.js"
     }
   ],
   "preloadedCss": [
