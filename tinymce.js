@@ -6,7 +6,6 @@ function carregaTiny() {
 
     // Quando o TinyMCE for carregado
     script.onload = () => {
-        console.log("Entrei aqui");
         tinymce.init({
             selector: '.ckeditor',
             height: 500,
@@ -44,4 +43,3 @@ function carregaTiny() {
 }
 
 carregaTiny();
-console.log("Entrei aqui 2");
