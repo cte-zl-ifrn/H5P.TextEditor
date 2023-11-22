@@ -26,6 +26,7 @@
       "img",
       "table",
       "tbody",
+      "th",
       "tr",
       "td",
       "s",
@@ -33,7 +34,12 @@
       "sup",
       "sub",
       "blockquote",
-      "iframe"
+      "iframe",
+      "dd",
+      "dl",
+      "dt",
+      "li",
+      "u"
     ],
     "font": {
       "size": true,
