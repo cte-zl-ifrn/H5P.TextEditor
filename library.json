@@ -10,6 +10,9 @@
   "preloadedJs": [
     {
       "path": "text.js"
+    },
+    {
+      "path": "h5peditor-tinymce.js"
     }
   ],
   "preloadedCss": [
