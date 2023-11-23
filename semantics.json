@@ -12,6 +12,7 @@
       "del",
       "a",
       "ul",
+      "li",
       "ol",
       "h1",
       "h2",
@@ -22,7 +23,6 @@
       "hr",
       "pre",
       "code",
-    
       "img",
       "table",
       "tbody",
@@ -38,7 +38,6 @@
       "dd",
       "dl",
       "dt",
-      "li",
       "u"
     ],
     "font": {
