@@ -39,35 +39,33 @@ ns.TinyMCE.prototype.appendTo = function ($wrapper) {
         selector: '.ckeditor',
         height: 500,
         resize: true,
+        font_size_input_default_unit: "px",
+        menu: {
+            file: { title: 'File', items: 'newdocument restoredraft | preview | export print | deleteallconversations' },
+            edit: { title: 'Edit', items: 'undo redo | cut copy paste pastetext | selectall | searchreplace' },
+            view: { title: 'View', items: 'code | visualaid visualchars visualblocks | spellchecker | preview fullscreen | showcomments' },
+            insert: { title: 'Insert', items: 'image link media addcomment pageembed template codesample inserttable | charmap emoticons hr | pagebreak nonbreaking anchor tableofcontents | insertdatetime' },
+            format: { title: 'Format', items: 'bold italic underline strikethrough superscript subscript codeformat | styles blocks fontfamily align lineheight | forecolor backcolor | language | removeformat' },
+            tools: { title: 'Tools', items: 'spellchecker spellcheckerlanguage | a11ycheck code wordcount' },
+            table: { title: 'Table', items: 'inserttable | cell row column | advtablesort | tableprops deletetable' },
+            help: { title: 'Help', items: 'help' }
+          },
         plugins: [
-            'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
-            'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-            'insertdatetime', 'media', 'table', 'help', 'wordcount', 'codesample', 'code'
+          'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+          'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+          'insertdatetime', 'media', 'table', 'help', 'wordcount', 'codesample', 'code', 'emoticons'
         ],
         toolbar: 'undo redo | blocks | ' +
-            'bold italic backcolor | alignleft aligncenter ' +
-            'alignright alignjustify | bullist numlist outdent indent | ' +
-            'removeformat | help',
-        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }',
-        codesample_languages: [
-            { text: 'HTML/XML', value: 'markup' },
-            { text: 'JavaScript', value: 'javascript' },
-            { text: 'CSS', value: 'css' },
-            { text: 'PHP', value: 'php' },
-            { text: 'Ruby', value: 'ruby' },
-            { text: 'Python', value: 'python' },
-            { text: 'Java', value: 'java' },
-            { text: 'C', value: 'c' },
-            { text: 'C#', value: 'csharp' },
-            { text: 'C++', value: 'cpp' }
-        ],
-
+          'fontsizeinput bold italic backcolor | alignleft aligncenter ' +
+          'alignright alignjustify | bullist numlist outdent indent | ' +
+          'emoticons | removeformat | help',
+      
         setup: function (editor) {
-            editor.on('change', function () {
-                that.validate();
-            });
+          editor.on('change', function () {
+            that.validate();
+          });
         }
-    });
+      });
 };
 
 /**
@@ -96,7 +94,7 @@ ns.TinyMCE.prototype.validate = function () {
     var idUnico = this.$input.attr("id");
     var value = tinyMCE.get(idUnico).getContent() || "Texto vazio";
 
-    // Atualize o valor do campo com o conteúdo do TinyMCE
+    // Atualiza o valor do campo com o conteúdo do TinyMCE
     this.value = value;
     this.setValue(this.field, value);
     this.$input.change();

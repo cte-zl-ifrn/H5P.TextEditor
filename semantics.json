@@ -38,12 +38,14 @@
       "dd",
       "dl",
       "dt",
-      "u"
+      "u",
+      "style"
     ],
     "font": {
       "size": true,
       "color": true,
-      "background": true
+      "background": true,
+      "font-size": true
     }
   }
 ]
