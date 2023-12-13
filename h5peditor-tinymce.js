@@ -34,6 +34,57 @@ ns.TinyMCE.prototype.appendTo = function ($wrapper) {
 
   ns.bindImportantDescriptionEvents(this, this.field.name, this.parent);
 
+  tinymce.PluginManager.add("example", (editor, url) => {
+    /* Adiciona um botção que coloca um blockquote ao redor */
+    editor.ui.registry.addButton("example", {
+      text: "Citação",
+      onAction: () => {
+        /* Pega o texto selecionado*/
+        const selectedText = editor.selection.getContent();
+
+        /* Verifica se tem algo selecionado*/
+        if (selectedText) {
+          /* Verifica se ja ta dentro de um blockquote */
+          if (editor.dom.getParent(editor.selection.getNode(), "blockquote")) {
+            /* Remove o blockquote */
+            editor.formatter.remove("blockquote");
+          } else {
+            /* coloca o blockquote */
+            editor.execCommand("mceBlockQuote");
+          }
+        }
+      },
+    });
+
+    /* Adiciona um item de menu para o botão */
+    editor.ui.registry.addMenuItem("example", {
+      text: "Blockquote",
+      onAction: () => {
+        /* Pega o texto selecionado*/
+        const selectedText = editor.selection.getContent();
+
+        /* Verifica se tem algo selecionado*/
+        if (selectedText) {
+          /* Verifica se ja ta dentro de um blockquote */
+          if (editor.dom.getParent(editor.selection.getNode(), "blockquote")) {
+            /* Remove o blockquote */
+            editor.formatter.remove("blockquote");
+          } else {
+            /* coloca o blockquote */
+            editor.execCommand("mceBlockQuote");
+          }
+        }
+      },
+    });
+
+    return {
+      getMetadata: () => ({
+        name: "Example plugin",
+        url: "http://exampleplugindocsurl.com",
+      }),
+    };
+  });
+
   tinymce.init({
     selector: ".ckeditor",
     height: 500,
@@ -97,12 +148,13 @@ ns.TinyMCE.prototype.appendTo = function ($wrapper) {
       "codesample",
       "code",
       "emoticons",
+      "example",
     ],
     toolbar:
       "undo redo | blocks | " +
-      "fontsizeinput bold italic backcolor | alignleft aligncenter " +
+      "fontsizeinput bold italic example | alignleft aligncenter " +
       "alignright alignjustify | bullist numlist outdent indent | " +
-      "emoticons | removeformat | help",
+      "emoticons | removeformat | help backcolor ",
 
     image_title: true,
 
@@ -116,14 +168,6 @@ ns.TinyMCE.prototype.appendTo = function ($wrapper) {
   });
 };
 
-function isBase64(str) {
-  // A expressão regular verifica se a string tem o formato adequado para Base64
-  return (
-    /^[A-Za-z0-9+/=]+\s*$/.test(str) &&
-    (str.length % 4 === 0 || str.length === 0)
-  );
-}
-
 /**
  * Create TinyMCE for the TinyMCE field.
  */
@@ -132,9 +176,8 @@ ns.TinyMCE.prototype.createTinyMCE = function () {
   var input = '<textarea id="' + id + '" class="ckeditor" tabindex="0">';
 
   if (this.value !== undefined) {
-    if (isBase64(this.value)) {
+    if (this.isCode(this.value)) {
       var allHtml = "";
-      this.value = atob(this.value);
 
       for (let i = 0; i < this.value.length; i++) {
         allHtml += escapeHtmlCharacter(this.value.charAt(i));
@@ -190,14 +233,6 @@ ns.TinyMCE.prototype.validate = function () {
   // Pega o valor digitado
   var idUnico = this.$input.attr("id");
   var value = tinyMCE.get(idUnico).getContent() || "Texto vazio";
-
-  console.log(value);
-
-  // verifica se é codigo
-  if (that.isCode(value)) {
-    // faz o encode
-    value = btoa(value);
-  }
 
   // Salva
   this.value = value;

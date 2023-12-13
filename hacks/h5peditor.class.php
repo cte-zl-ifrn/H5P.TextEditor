@@ -28,6 +28,7 @@ class H5peditor {
     'scripts/h5peditor-fullscreen-bar.js',
     'scripts/h5peditor-form.js',
     'scripts/h5peditor-text.js',
+    'scripts/h5peditor-tinymce-quote.js',
     'scripts/h5peditor-tinymce.js',
     'scripts/h5peditor-html.js',
     'scripts/h5peditor-number.js',
