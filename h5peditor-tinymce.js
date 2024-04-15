@@ -96,6 +96,7 @@ ns.TinyMCE.prototype.appendTo = function ($wrapper) {
     });
 
     tinymce.init({
+        base_url: "../lib/editor/tiny/js/tinymce/",
         selector: ".ckeditor",
         height: 500,
         resize: true,
@@ -268,7 +269,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var script = document.createElement("script");
 
     // Define o atributo src para o URL do script do TinyMCE
-    script.src = "../h5p/h5plib/v124/joubel/tinymce/js/tinymce/tinymce.min.js";
+    script.src = "../lib/editor/tiny/js/tinymce/tinymce.min.js";
 
     // Adiciona o script ao corpo do documento
     document.body.appendChild(script);
