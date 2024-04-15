@@ -269,7 +269,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Define o atributo src para o URL do script do TinyMCE
     script.src = "../h5p/h5plib/v124/joubel/tinymce/js/tinymce/tinymce.min.js";
-    console.log("oi");
 
     // Adiciona o script ao corpo do documento
     document.body.appendChild(script);
