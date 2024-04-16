@@ -1,24 +1,18 @@
 # Readme - TextEditor
 
-Esta é uma ferramenta H5P de edição de conteúdo de texto baseada na biblioteca TinyMCE. Com este editor de texto enriquecido, você pode criar conteúdo formatado de maneira simples e intuitiva, graças a uma interface fácil de usar.
+This is an H5P tool for text content editing based on the TinyMCE library. With this rich text editor, you can create formatted content in a simple and intuitive way, thanks to an easy-to-use interface.
 
 ![Untitled](README/Untitled.png)
 
-**Como Integrar Esta Biblioteca no Seu Ambiente:**
+**How to Integrate This Library into Your Environment:**
 
-1. Não será necessário se preocupar em instalar pré-dependências, pois essa nova ferramenta depende apenas do H5P.Text. Por padrão, esse componente já estará instalado em seu ambiente.
-2. Então basta empacotar o arquivo utilizando a Inferface de linha de comando do h5p(H5Pcli), e inserir o arquivo empacotado em seu ambiente de desenvolvimento. Para mais informações acesse: [Doc cli5hp](https://h5p.org/h5p-cli-guide)
+1. ou won't need to worry about installing pre-dependencies, as this new tool relies solely on H5P.Text. By default, this component will already be installed in your environment. If it isn't, please access: [H5P.Text](https://github.com/cte-zl-ifrn/H5P.PreDependencias/releases/download/1.0.0/text.h5p)
+2. So just download the textEditor file from the release, and insert the packaged file into your development environment. For more information, visit: [Text Editor](https://h5p.org/h5p-cli-guide)
 
-**Utilizando o componente TextEditor dentro de outro conteúdo h5p:**
+**Using the TextEditor component within another h5p content:**
 
-1. Digamos que você queira utilizar o TextEditor dentro de um conteúdo Column, que inclusive o Livro Interativo utiliza o Column para criar seus conteúdos. Por padrão o Column nao irá mostrar como opção o nosso textEditor.
-2. Então teremos que inicialmente baixar a biblioteca Column localmente, para fazer a alteração. Podemos adquiri-la por linha de comando utilizando a interface de linha de comando do H5P (h5pcli). Mais informações em: https://h5p.org/h5p-cli-guide
-
-   1. baixando o column: Abra um terminal localmente e insira o seguinte comando: `h5p get h5p-column`
-   2. Abra o column em algum editor de código(VS Code)
-   3. Inserindo nosso componente: No arquivo semantics, devemos inserir `"H5P.TextEditor 1.0",`, dessa forma o nosso TextEditor será listado como uma opção.![Untitled](README/Untitled2.png)
-   4. Por fim, devemos empacotar o diretório do Column utilizando a linha de comando: `h5p pack h5p-column h5p-column.h5p`.
-   5. Agora basta inserir o arquivo h5p-column.h5p no seu ambiente para atualizar, e usufruir do novo componente de texto.
+1. Let's say you want to use the TextEditor within a Column content, which the Interactive Book also uses the Column to create its contents. By default, Column will not show our TextEditor as an option.
+2. Para isto, basta baixar o arquivo h5p do column em: [COLUMN](https://github.com/cte-zl-ifrn/H5P.PreDependencias/releases/download/1.0.0/column.h5p) e inserir o arquivo compactado no seu ambiente.
       
 **Guia Passo a Passo para Compactar e Integrar Bibliotecas H5P no Moodle:**
 
