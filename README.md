@@ -6,7 +6,7 @@ This is an H5P tool for text content editing based on the TinyMCE library. With 
 
 **How to Integrate This Library into Your Environment:**
 
-1. You won't need to worry about installing pre-dependencies, as this new tool relies solely on H5P.Text. By default, this component will already be installed in your environment. If it isn't, please access: [H5P.Text](https://github.com/cte-zl-ifrn/H5P.TextEditor/releases/download/1.0.2/text.h5p)
+1. You won't need to worry about installing pre-dependencies, as this new tool relies solely on H5P.Text. By default, this component will already be installed in your environment. If it isn't, please access: [H5P.Text]([https://github.com/cte-zl-ifrn/H5P.TextEditor/releases/download/1.0.2/text.h5p](https://github.com/cte-zl-ifrn/h5p-text/releases/download/1.0.0/text.h5p))
 2. So just download the textEditor file from the release, and insert the packaged file into your development environment. Visit: [Text Editor](https://github.com/cte-zl-ifrn/H5P.TextEditor/releases/download/1.0.2/texteditor.h5p)
 
 **Using the TextEditor component within another h5p content:**
